@@ -1,20 +1,45 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0efeb; /* Yumuşak kırık beyaz */
+  color: #2e2e2e;
   max-width: 500px;
   margin: auto;
   padding: 1rem;
-  background: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
 }
 
 form {
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
 
-input, button {
-  padding: 0.5rem;
+input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
   font-size: 1rem;
+  background-color: #fffdf9;
+}
+
+button {
+  padding: 0.6rem;
+  background-color: #f4a261; /* Pastel turuncu */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #e68948;
 }
 
 ul {
@@ -23,16 +48,20 @@ ul {
 }
 
 li {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 0.75rem;
+  background-color: white;
   margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 button.taken {
-  background: #d4edda;
-  color: #155724;
+  background-color: #6c757d; /* Gri ton: alınan ilaç */
+}
+
+button.taken:hover {
+  background-color: #5c636a;
 }
